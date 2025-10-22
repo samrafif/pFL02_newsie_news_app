@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import '../modules/article_detail/article_detail_binding.dart';
 import '../modules/article_detail/article_detail_view.dart';
+import '../modules/bookmarks/bookmarks_binding.dart';
+import '../modules/bookmarks/bookmarks_view.dart';
 import '../modules/home/home_binding.dart';
 import '../modules/home/home_view.dart';
 import '../modules/onboarding/onboarding_binding.dart';
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.SEARCH,
       page: () => const SearchView(),
       binding: SearchBinding(),
+    ),
+    GetPage(
+      name: _Paths.BOOKMARKS,
+      page: () => const BookmarksView(),
+      binding: BookmarksBinding(),
     ),
   ];
 }

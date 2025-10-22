@@ -7,6 +7,7 @@ abstract class Routes {
   static const ARTICLE_DETAIL = _Paths.ARTICLE_DETAIL;
   static const ONBOARDING = _Paths.ONBOARDING;
   static const SEARCH = _Paths.SEARCH;
+  static const BOOKMARKS = _Paths.BOOKMARKS;
 }
 
 abstract class _Paths {
@@ -15,4 +16,5 @@ abstract class _Paths {
   static const ARTICLE_DETAIL = '/article-detail';
   static const ONBOARDING = '/onboarding';
   static const SEARCH = '/search';
+  static const BOOKMARKS = '/bookmarks';
 }
