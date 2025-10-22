@@ -5,7 +5,7 @@ typedef TextThemeBuilder = TextTheme Function([TextTheme? textTheme]);
 
 class CustomTheme {
   static const Color primaryColor = Color(0xFF795548);
-  static const Color secondaryColor = Color(0xFF03DAC6);
+  static const Color secondaryColor = Color(0xFFFFFFFF);
   static const Color backgroundColor = Color(0xFFF5F5F5);
   static const Color textColorLight = Color(0xFF000000);
   static const Color textColorDark = Color(0xFFFFFFFF);
@@ -38,6 +38,17 @@ class CustomTheme {
         titleMedium: textTheme.titleMedium?.copyWith(color: textColorLight),
         titleSmall: arabicTextTheme.titleSmall?.copyWith(color: textColorLight, height: arabicLineHeight),
       ),
+      chipTheme: ChipThemeData.fromDefaults(
+          primaryColor: primaryColor,
+          secondaryColor: secondaryColor,
+          labelStyle: const TextStyle(
+            color: textColorLight
+          ),
+        ).copyWith(
+          pressElevation: 2,
+          //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        ),
+
       // (
       //   ThemeData.light().textTheme,
       // )
@@ -67,6 +78,18 @@ class CustomTheme {
         titleMedium: textTheme.titleMedium?.copyWith(color: textColorDark),
         titleSmall: arabicTextTheme.titleSmall?.copyWith(color: textColorDark, height: arabicLineHeight),
       ),
+
+      chipTheme: ChipThemeData.fromDefaults(
+          primaryColor: primaryColor,
+          secondaryColor: Colors.white,
+          labelStyle: const TextStyle(
+            color: textColorDark
+          ),
+        ).copyWith(
+          pressElevation: 2,
+          //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        ),
+
       // (
       //   ThemeData.dark().textTheme,
       // ),

@@ -33,6 +33,41 @@ main() async {
   );
 }
 
+// gu gu ga ga                  gu gu ga ga
+// gu gu ga ga                  gu gu ga ga
+// gu gu ga ga                  gu gu ga ga
+// gu gu ga ga                  gu gu ga ga
+//                          
+//                          
+//                          
+// gu gu ga ga                  gu gu ga ga                                                    
+// gu gu ga ga                  gu gu ga ga
+// gu gu ga ga                  gu gu ga ga
+// gu gu ga ga gu gu ga ga gu g gu gu ga ga
+// gu gu ga ga gu gu ga ga gu g gu gu ga ga
+//
+// CAN AI HAVE A MENTAL BREAKDOWN LIKE THIS HUH??? THIS JOB CANNOT BE TAKEN
+// THIS JOB CANNOT BE TAKEN
+// THIS JOB CANNOT BE TAKEN
+// THIS JOB CANNOT BE TAKEN
+// THIS JOB CANNOT BE TAKEN
+// MY   JOB CANNOT BE TAKEN
+// MY   JOB CANNOT BE TAKEN
+// MY   JOB CANNOT BE TAKEN
+// MY   JOB CANNOT BE TAKEN
+// MY   JOB CANNOT BE TAKEN
+// MY   JOB CANNOT BE TAKEN
+// MY   JOB CANNOT BE TAKEN
+// MY   JOB CANNOT BE TAKEN
+// MY   JOB CANNOT BE TAKEN
+// MY   JOB CANNOT BE TAKEN
+// THIS JOB CANNOT BE TAKEN
+// THIS JOB CANNOT BE TAKEN
+// THIS JOB CANNOT BE TAKEN
+// THIS JOB CANNOT BE TAKEN
+// 
+// god save us all
+//                    
 // [00:02.87] Hey, it's me
 // [00:07.07] Things have been weird
 // [00:09.33] 눈이 가 자꾸 왜 이래? (Whoa)
@@ -86,3 +121,48 @@ main() async {
 // [02:53.52] 기다려져 call me (call me), 확실히 난 fallin' (fallin')
 // [02:57.42] 차오르는 웃음이 (웃음이), 번져가잖아, yeah
 // [03:02.60] 
+
+
+// [00:14.88] Look, it's a new me
+// [00:16.57] Switched it up, who's this?
+// [00:18.55] 우릴 봐 NewJeans
+// [00:20.10] So fresh, so clean
+// [00:22.63] 얼마나, 기다렸던 날
+// [00:26.14] 드디어, time to step out
+// [00:29.76] 또 한 번 더
+// [00:31.49] Ready for sure to have some more
+// [00:36.38] New hair, new tee
+// [00:38.10] NewJeans, do you see?
+// [00:39.99] New hair, new tee
+// [00:41.66] NewJeans, do you see?
+// [00:43.44] New hair, new tee
+// [00:45.19] NewJeans, do you see?
+// [00:47.09] New hair, new tee
+// [00:48.83] NewJeans, do you see?
+// [00:50.40] Make it feel like a game
+// [00:52.26] Look at us, we go on and on again
+// [00:54.09] We'll go on to the end
+// [00:55.87] What we wanna do, on and on again
+// [00:57.89] Make it feel like a game
+// [00:59.44] Look at us, we go on and on again
+// [01:01.30] We'll go on to the end
+// [01:02.91] What we wanna do, on and on again
+// [01:05.09] Look, it's a new me
+// [01:06.81] Switched it up, who's this?
+// [01:08.62] 들어봐 NewJeans
+// [01:10.50] So fresh, so clean
+// [01:12.83] 얼마나, 기다렸던 날
+// [01:16.46] 드디어, feeling's so right
+// [01:19.90] 또 한 번 더
+// [01:21.62] I need to know, you want some more
+// [01:26.52] New hair, new tee
+// [01:28.35] NewJeans, you and me
+// [01:30.22] New hair, new tee
+// [01:31.86] NewJeans, you and me
+// [01:33.70] New hair, new tee
+// [01:35.39] NewJeans, you and me
+// [01:37.35] New hair, new tee
+// [01:39.08] NewJeans, you and me
+// [01:40.19]
+
+//

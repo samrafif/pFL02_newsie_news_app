@@ -3,21 +3,14 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:p02_newsie_news_app/app/controllers/on_start_controller.dart';
 import 'package:p02_newsie_news_app/app/routes/app_pages.dart';
+import 'package:p02_newsie_news_app/core/config.dart';
 
 class OnboardingController extends GetxController {
   // current page index
   final page = 0.obs;
 
   // Predefined suggestions
-  final suggestions = <String>[
-    "business",
-    "entertainment",
-    "general",
-    "health",
-    "science",
-    "sports",
-    "technology"
-];
+  final suggestions = Config.topics;
 
   // Selected topics
   final RxList<String> selectedTopics = <String>[].obs;
@@ -80,7 +73,8 @@ class OnboardingController extends GetxController {
     } else {
       // default: return result to previous route
       //Get.back(result: {'topics': topics, 'notifications': notificationsEnabled.value});
-      //Get.find<OnStartController>().setFirstLaunchDone();
+      //Get.find<OnStartController>().setFirstLaunchDone(); 
+      // TODO: ^^ REMEMBER TO UNCOMMENT
       box.write('preferred_topics', topics);
       box.write('notifications_enabled', notificationsEnabled.value);
 

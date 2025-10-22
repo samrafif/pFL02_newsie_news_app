@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 class ArticleDetailController extends GetxController {
   //TODO: Implement ArticleDetailController
 
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -19,5 +18,4 @@ class ArticleDetailController extends GetxController {
     super.onClose();
   }
 
-  void increment() => count.value++;
 }

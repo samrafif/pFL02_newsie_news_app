@@ -256,7 +256,7 @@ class OnboardingView extends GetView<OnboardingController> {
                     Wrap(
                       spacing: 8,
                       runSpacing: 8,
-                      children: controller.selectedTopics.map((t) => Chip(label: Text(t))).toList(),
+                      children: controller.selectedTopics.map((t) => Chip(label: Text(capitalizeFirst(t)))).toList(),
                     ),
                     const SizedBox(height: 18),
                   ],
