@@ -18,7 +18,7 @@ class Endpoints {
 
   static everythingBase(String apiKey, String? query) {
       String safeQuery = (query != null) ? "&q=${Uri.encodeComponent(query)}" : "";
-      return "$baseAPIUrl/everything?apiKey=$apiKey&$defaultParams$safeQuery";
+      return "$baseAPIUrl/everything?apiKey=$apiKey$defaultParams$safeQuery";
   }
   
   static String topHeadlines(String apiKey) {

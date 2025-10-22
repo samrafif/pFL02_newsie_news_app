@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:p02_newsie_news_app/app/data/top_headlines_response.dart';
+
 /// Root model representing the whole API response
 class NewsResponse {
   final String status;
@@ -40,71 +42,71 @@ class NewsResponse {
 }
 
 /// Represents each article
-class Article {
-  final Source? source;
-  final String? author;
-  final String? title;
-  final String? description;
-  final String? url;
-  final String? urlToImage;
-  final DateTime? publishedAt;
-  final String? content;
+// class Article {
+//   final Source? source;
+//   final String? author;
+//   final String? title;
+//   final String? description;
+//   final String? url;
+//   final String? urlToImage;
+//   final DateTime? publishedAt;
+//   final String? content;
 
-  Article({
-    this.source,
-    this.author,
-    this.title,
-    this.description,
-    this.url,
-    this.urlToImage,
-    this.publishedAt,
-    this.content,
-  });
+//   Article({
+//     this.source,
+//     this.author,
+//     this.title,
+//     this.description,
+//     this.url,
+//     this.urlToImage,
+//     this.publishedAt,
+//     this.content,
+//   });
 
-  factory Article.fromJson(Map<String, dynamic> json) {
-    return Article(
-      source:
-          json['source'] != null ? Source.fromJson(json['source']) : null,
-      author: json['author'],
-      title: json['title'],
-      description: json['description'],
-      url: json['url'],
-      urlToImage: json['urlToImage'],
-      publishedAt: json['publishedAt'] != null
-          ? DateTime.tryParse(json['publishedAt'])
-          : null,
-      content: json['content'],
-    );
-  }
+//   factory Article.fromJson(Map<String, dynamic> json) {
+//     return Article(
+//       source:
+//           json['source'] != null ? Source.fromJson(json['source']) : null,
+//       author: json['author'],
+//       title: json['title'],
+//       description: json['description'],
+//       url: json['url'],
+//       urlToImage: json['urlToImage'],
+//       publishedAt: json['publishedAt'] != null
+//           ? DateTime.tryParse(json['publishedAt'])
+//           : null,
+//       content: json['content'],
+//     );
+//   }
 
-  Map<String, dynamic> toJson() => {
-        'source': source?.toJson(),
-        'author': author,
-        'title': title,
-        'description': description,
-        'url': url,
-        'urlToImage': urlToImage,
-        'publishedAt': publishedAt?.toIso8601String(),
-        'content': content,
-      };
-}
+//   Map<String, dynamic> toJson() => {
+//         'source': source?.toJson(),
+//         'author': author,
+//         'title': title,
+//         'description': description,
+//         'url': url,
+//         'urlToImage': urlToImage,
+//         'publishedAt': publishedAt?.toIso8601String(),
+//         'content': content,
+//       };
+// }
 
-/// Represents the nested "source" field
-class Source {
-  final String? id;
-  final String? name;
+// /// Represents the nested "source" field
+// class Source {
+//   final String? id;
+//   final String? name;
 
-  Source({this.id, this.name});
+//   Source({this.id, this.name});
 
-  factory Source.fromJson(Map<String, dynamic> json) {
-    return Source(
-      id: json['id'],
-      name: json['name'],
-    );
-  }
+//   factory Source.fromJson(Map<String, dynamic> json) {
+//     return Source(
+//       id: json['id'],
+//       name: json['name'],
+//     );
+//   }
 
-  Map<String, dynamic> toJson() => {
-        'id': id,
-        'name': name,
-      };
-}
+//   Map<String, dynamic> toJson() => {
+//         'id': id,
+//         'name': name,
+//       };
+// }

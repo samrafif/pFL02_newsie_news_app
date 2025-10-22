@@ -1,6 +1,7 @@
 // ...existing code...
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:p02_newsie_news_app/app/routes/app_pages.dart';
 import 'package:p02_newsie_news_app/app/widgets/article_tile.dart';
 import 'package:p02_newsie_news_app/app/widgets/breaking_news_card.dart';
 import 'package:p02_newsie_news_app/app/widgets/widget_carousel.dart';
@@ -108,7 +109,20 @@ class HomeView extends GetView<HomeController> {
         backgroundColor: Colors.transparent,
         title: Text('NEWSie', style: TextStyle(color: Colors.grey.shade800, fontWeight: FontWeight.w700, fontSize: 20))
       ),
-      floatingActionButton: FloatingSearchBar(),
+      floatingActionButton: FloatingSearchBar(
+        onBookmarkPressed: () {
+          // Show not implemented snackbar
+          Get.snackbar(
+            'Not Implemented',
+            'Bookmark feature is not implemented yet, due to [DEVELOPER BURNOUT, CONNECTION INSTABILITY, & SITUATION VOLATILITY], please wait for the next minor version. Also like thanks for cooking for us (to all ustaz), like actually super thanks am super grateful (sooper heartfelt thank you), will implement later when have time... sometime',
+            snackPosition: SnackPosition.BOTTOM,
+            duration: const Duration(seconds: 10),
+            );
+        },
+        onSubmitted: (value) => {
+          Get.toNamed(Routes.SEARCH, parameters: {'query': value})
+        },
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       body: Column(
         children: [
@@ -198,7 +212,11 @@ class _FloatingSearchBarState extends State<FloatingSearchBar> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const SizedBox(width: 16),
-          const Icon(Icons.search, color: Colors.grey),
+          IconButton(
+            onPressed: () {
+              widget.onSubmitted?.call(_controller.text);
+            },
+            icon: const Icon(Icons.search, color: Colors.grey)),
           const SizedBox(width: 8),
           Expanded(
             child: TextField(

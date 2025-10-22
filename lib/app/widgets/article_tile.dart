@@ -5,7 +5,7 @@ import 'package:p02_newsie_news_app/app/data/top_headlines_response.dart' as top
 
 class ArticleTile extends StatelessWidget {
   final top.Article article;
-  final onTap;
+  final Function(top.Article article)? onTap;
 
   const ArticleTile({super.key, required this.article, this.onTap});
 
