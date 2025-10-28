@@ -72,8 +72,8 @@ class OnboardingController extends GetxController {
       onFinish!(topics, notificationsEnabled.value);
     } else {
       // default: return result to previous route
-      //Get.back(result: {'topics': topics, 'notifications': notificationsEnabled.value});
-      //Get.find<OnStartController>().setFirstLaunchDone(); 
+      Get.back(result: {'topics': topics, 'notifications': notificationsEnabled.value});
+      Get.find<OnStartController>().setFirstLaunchDone(); 
       // TODO: ^^ REMEMBER TO UNCOMMENT
       box.write('preferred_topics', topics);
       box.write('notifications_enabled', notificationsEnabled.value);
