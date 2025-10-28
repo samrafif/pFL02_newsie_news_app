@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+# remember to put your api key in `lib/uwu.dart`
+```
+// use this template >w<
+const String secret = "TWOP_SECWET";
+```
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
